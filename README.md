@@ -1,4 +1,4 @@
-# Mail2todoist
+# Mail2Todoist
 Create a Todoist task from Apple Mail
 
 ## Usage
