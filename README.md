@@ -1,4 +1,4 @@
-# Mail2Todoist
+# Mail2todoist
 Create a Todoist task from Apple Mail
 
 ## Usage
@@ -11,7 +11,6 @@ Create a Todoist task from Apple Mail
 ## Required
 
 * Todoist Premium (todoist.com)
-* JSON Helper (mousedown.net)
 
 ## Setup
 
