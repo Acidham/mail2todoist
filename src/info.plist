@@ -552,7 +552,7 @@ Setup
 		<string>todoistToken</string>
 	</array>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/mail2todoist</string>
 </dict>
