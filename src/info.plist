@@ -8,11 +8,50 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>0B817021-3075-4AED-9093-99BB52408FF4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9BE233F3-AB93-4CA6-A151-2B91AE1FE493</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>16C39134-F6B6-4766-B4D2-097ABBBB3828</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>08771C28-B3AA-4D38-83AB-5E45FC0901E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2D081536-E802-4070-AF0D-9B72C2175172</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4094613C-786E-49C0-886D-44C5A356E5DE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -86,6 +125,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9BE233F3-AB93-4CA6-A151-2B91AE1FE493</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4094613C-786E-49C0-886D-44C5A356E5DE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AE490658-3765-4060-B16F-8FAB1A1F0E0D</key>
 		<array>
 			<dict>
@@ -143,6 +195,41 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>AE490658-3765-4060-B16F-8FAB1A1F0E0D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.mail</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8C55D68B-75C8-47C7-9F19-858FD19E18E3</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -240,41 +327,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.mail</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>8C55D68B-75C8-47C7-9F19-858FD19E18E3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
@@ -343,6 +395,48 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Set Project","arg":"project","subtitle":"Set Todoist Project where task will be added"},{"title":"Set Label","arg":"label","subtitle":"Set Todoist Label where task will be added"}]</string>
+				<key>keyword</key>
+				<string>m2t:config</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Set target Project and Label</string>
+				<key>title</key>
+				<string>Project/Label configuration</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>627CD7C3-C4CC-40AB-8626-6D388C6BC025</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>*m2tconfig</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>EA66C970-9101-4E79-ABD5-C601099361E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -385,48 +479,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Set Project","arg":"project","subtitle":"Set Todoist Project where task will be added"},{"title":"Set Label","arg":"label","subtitle":"Set Todoist Label where task will be added"}]</string>
-				<key>keyword</key>
-				<string>m2t:config</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Set target Project and Label</string>
-				<key>title</key>
-				<string>Mail2Todoist, configuration</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>627CD7C3-C4CC-40AB-8626-6D388C6BC025</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>*m2tconfig</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>EA66C970-9101-4E79-ABD5-C601099361E8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>variables</key>
@@ -442,27 +494,156 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>*m2t:mailconfig</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>run script "mailbox_action.scpt" with parameters "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4094613C-786E-49C0-886D-44C5A356E5DE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>m2t:mailconfig</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>run script "mailbox.scpt" with parameters "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Set default archive mailbox</string>
+				<key>title</key>
+				<string>Mailbox configuration</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9BE233F3-AB93-4CA6-A151-2B91AE1FE493</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>*m2t:mailconfig</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>0B817021-3075-4AED-9093-99BB52408FF4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Mailbox config saved</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>Mail2Todoist
-============
+	<string># Mail2todoist
+Create a Todoist task from Apple Mail
 
-Workflow which creates a Todoist Task from an Email
+## Usage
 
-Usage
------
 * Keyboard Shortcut, create Todo in Todoist with default due date and default project and label
-* "m2t:config": default project setup
-* "m2t": add due date (natural lanugage) and/or #Project and/or @Label
+* If no config were executed (`m2t:config` and/or  `m2t:mailconfig`): 
+	* default project will be Todoist Inbox
+	* no label will be added 
+	* the email will not be archived. 
+* `m2t:config`: default project and label setup
+* `m2t:mailconfig`: Setup Archive Mailbox(es). 
+	* If you have multiple accounts setup im Mail you can create an entry for each account, e.g. Gmail:[Gmail]/All Mail or Exchange:Archive
+* `m2t`: add due date (natural language) and/or #Project and/or @Label instead of using default setup
+* `Shift + CMD + T` creates Todoist task *tomorrow at 10:00* with default project and label
 
-Required
---------
+## Required
+
 * Todoist Premium (todoist.com)
 
-Setup
------
-* Add Todoist API Key (https://todoist.com/prefs/integrations)
-* Add Destination Mailbox, the folder where email will be moved/archived. If empty email will not be archived.</string>
+## Setup
+
+1. Add Todoist API Key (https://todoist.com/prefs/integrations)
+3. Type `m2t:config` in Alfred to setup default Project and Label
+4. Type `m2t:mailboxconifg`in Alfred to setup default Archive mailbox for each account</string>
 	<key>uidata</key>
 	<dict>
 		<key>08771C28-B3AA-4D38-83AB-5E45FC0901E5</key>
@@ -472,12 +653,40 @@ Setup
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
+		<key>0B817021-3075-4AED-9093-99BB52408FF4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
 		<key>16C39134-F6B6-4766-B4D2-097ABBBB3828</key>
 		<dict>
 			<key>xpos</key>
 			<integer>610</integer>
 			<key>ypos</key>
 			<integer>450</integer>
+		</dict>
+		<key>2D081536-E802-4070-AF0D-9B72C2175172</key>
+		<dict>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
+		<key>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</key>
+		<dict>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
+		<key>4094613C-786E-49C0-886D-44C5A356E5DE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>610</integer>
 		</dict>
 		<key>53BF175F-01D9-4EEF-B832-2517A8FF94D0</key>
 		<dict>
@@ -525,6 +734,13 @@ Setup
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
+		<key>9BE233F3-AB93-4CA6-A151-2B91AE1FE493</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
 		<key>AE490658-3765-4060-B16F-8FAB1A1F0E0D</key>
 		<dict>
 			<key>xpos</key>
@@ -542,8 +758,6 @@ Setup
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>destinationMailbox</key>
-		<string>Archive</string>
 		<key>todoistToken</key>
 		<string>aa5d622b1a1c9021fca4684f0a76655b0e43f070</string>
 	</dict>
@@ -552,7 +766,7 @@ Setup
 		<string>todoistToken</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/mail2todoist</string>
 </dict>
