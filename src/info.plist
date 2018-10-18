@@ -497,19 +497,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>*m2t:mailconfig</string>
-				<key>passinputasargument</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>passvariables</key>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
 				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Mailbox config saved</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
+			<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -586,6 +588,25 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>externaltriggerid</key>
+				<string>*m2t:mailconfig</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>triggerid</key>
 				<string>*m2t:mailconfig</string>
 			</dict>
@@ -596,31 +617,10 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Mailbox config saved</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># Mail2todoist
-Create a Todoist task from Apple Mail
+Create a Todoist task from Apple Mail 
 
 ## Usage
 
@@ -766,7 +766,7 @@ Create a Todoist task from Apple Mail
 		<string>todoistToken</string>
 	</array>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/mail2todoist</string>
 </dict>
