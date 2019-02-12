@@ -170,7 +170,7 @@
 	<key>description</key>
 	<string>Add Mail as task to Todoist</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Mail2Todoist</string>
 	<key>objects</key>
@@ -328,7 +328,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>m2t</string>
 				<key>subtext</key>
@@ -497,21 +497,19 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>externaltriggerid</key>
+				<string>*m2t:mailconfig</string>
+				<key>passinputasargument</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
+				<key>passvariables</key>
 				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Mailbox config saved</string>
+				<key>workflowbundleid</key>
+				<string>self</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
+			<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -537,6 +535,19 @@ fi</string>
 			<string>4094613C-786E-49C0-886D-44C5A356E5DE</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>*m2t:mailconfig</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>0B817021-3075-4AED-9093-99BB52408FF4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -588,49 +599,38 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>*m2t:mailconfig</string>
-				<key>passinputasargument</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>passvariables</key>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
 				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Mailbox config saved</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>32CAAEEB-B22E-4E1B-9E99-A83F33AABF22</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>*m2t:mailconfig</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>0B817021-3075-4AED-9093-99BB52408FF4</string>
+			<string>2D081536-E802-4070-AF0D-9B72C2175172</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string># Mail2todoist
-Create a Todoist task from Apple Mail 
+Create a Todoist task from Apple Mail
 
 ## Usage
 
 * Keyboard Shortcut, create Todo in Todoist with default due date and default project and label
-* If no config were executed (`m2t:config` and/or  `m2t:mailconfig`): 
+* If no config were executed (`m2t:config` and/or  `m2t:mailconfig`):
 	* default project will be Todoist Inbox
-	* no label will be added 
-	* the email will not be archived. 
+	* no label will be added
+	* the email will not be archived.
 * `m2t:config`: default project and label setup
-* `m2t:mailconfig`: Setup Archive Mailbox(es). 
+* `m2t:mailconfig`: Setup Archive Mailbox(es).
 	* If you have multiple accounts setup im Mail you can create an entry for each account, e.g. Gmail:[Gmail]/All Mail or Exchange:Archive
 * `m2t`: add due date (natural language) and/or #Project and/or @Label instead of using default setup
 * `Shift + CMD + T` creates Todoist task *tomorrow at 10:00* with default project and label
@@ -759,14 +759,14 @@ Create a Todoist task from Apple Mail
 	<key>variables</key>
 	<dict>
 		<key>todoistToken</key>
-		<string>aa5d622b1a1c9021fca4684f0a76655b0e43f070</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
 		<string>todoistToken</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/mail2todoist</string>
 </dict>
